@@ -1,0 +1,424 @@
+::-webkit-scrollbar {
+
+    display: none;
+
+}
+
+p {
+
+    cursor: default;
+    -webkit-user-select: none;
+    -ms-user-select: none; 
+    user-select: none;
+
+}
+
+img {
+
+    -webkit-user-select: none;
+    -ms-user-select: none; 
+    user-select: none;
+    pointer-events: none;
+
+}
+
+.Home {
+
+    width: 100%;
+    padding: 70px 0 0;
+
+}
+
+.Home .Head {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Head img {
+
+    width: 160px;
+    scale: 1.4;
+
+}
+
+.Head p:nth-child(2) {
+
+    font-size: 30px;
+    font-weight: 600;
+    width: 90%;
+    text-align: center;
+
+}
+
+.Head p:nth-child(3) {
+
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    width: 90%;
+
+}
+
+.Head {
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 600;
+
+}
+
+.Intro {
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: rgb(44 44 44);
+    color: white;
+
+}
+
+.Intro p {
+
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.Courses {
+
+    width: 100%;
+    margin: 20px 0 0 0;
+    padding: 20px;
+    background-color: rgb(44 44 44);
+    color: white;
+
+}
+
+.Courses-list {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 10px 0;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 30px;
+
+}
+
+.Course {
+
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+    color: black;
+
+}
+
+.Course:hover {
+
+    scale: 1.05;
+
+}
+
+.HowItWorks, .Steps, .Step {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Steps {
+
+    padding: 10px 20px 5px 20px;
+
+}
+
+.Step {
+
+    margin: 10px 0;
+
+}
+
+.CTA {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0 0 0;
+
+}
+
+.CTA p {
+
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+.CTA a {
+
+    color: rgb(35, 112, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    font-size: 18px;
+
+}
+
+.CTA a p {
+
+    transition: 0.5s;
+
+}
+
+.CTA a:hover {
+
+    scale: 1.05;
+    
+}
+
+.CTA a:hover p {
+
+    scale: 1.05;
+    translate: 10px;
+
+}
+
+.Reviews {
+
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.Review {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+
+}
+
+.user-reviews {
+
+    width: 80%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+
+}
+
+.user {
+
+    width: 100%;
+    display: flex;
+    padding: 10px 20px;
+    align-items: center;
+
+}
+
+.user img {
+
+    width: 35px;
+    height: 35px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    border-radius: 50px;
+
+}
+
+.user p {
+
+    margin-left: 15px;
+
+}
+
+.content {
+
+    width: 100%;
+    padding: 10px 20px;
+
+}
+
+.Review-input {
+
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+
+}
+
+.Review-input form {
+
+    width: 100%;
+
+}
+
+.Review-input p {
+
+    width: 100%;
+
+}
+
+.Review-input textarea {
+
+    width: 100%;
+    height: 110px;
+    resize: none;
+    padding: 10px;
+    margin: 10px 0;
+
+}
+
+.Review-input input {
+
+    width: 100px;
+    background-color: rgb(35, 112, 255);
+    color: white;
+    border: none;
+    height: 30px;
+
+}
+
+.Review-input input:hover {
+
+    background-color: rgb(255, 255, 255);
+    color: rgb(35, 112, 255);
+    border: 2px solid rgb(35, 112, 255);
+
+}
+
+.Review-input a {
+
+    padding: 3.3px 40px;
+    background-color: rgb(35, 112, 255);
+    color: white;
+    border: none;
+
+}
+
+.Review-input a:hover {
+
+    background-color: rgb(255, 255, 255);
+    color: rgb(35, 112, 255);
+    border: 2px solid rgb(35, 112, 255);
+
+}
+
+.V-Reveiw {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 20px 0;
+
+}
+
+.V-Reveiw a {
+
+    color: rgb(35, 112, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    font-size: 18px;
+
+}
+
+.V-Reveiw a p {
+
+    transition: 0.5s;
+
+}
+
+.V-Reveiw a:hover {
+
+    scale: 1.05;
+    
+}
+
+.V-Reveiw a:hover p {
+
+    scale: 1.05;
+    translate: 10px;
+
+}
+
+.messages .message {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    background: rgb(35, 112, 255);
+    padding: 5px;
+    color: white;
+    margin: 0;
+    transition: 0.5s;
+}
+
+@media (max-width: 450px) {
+
+    .Intro p {
+
+        width: 90%;
+
+    }
+
+    .Step p {
+
+        text-align: center;
+
+    }
+
+    .user-reviews {
+
+        width: 100%;
+
+    }
+
+    .Review-input {
+        width: 100%;
+    }
+
+}

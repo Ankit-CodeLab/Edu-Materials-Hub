@@ -1,0 +1,367 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+#root {
+    width: 100%;
+}
+
+/* ------------------------------------------------- Login Page -----------------------------------------------*/
+
+.Login {
+    width: 100%;
+    background: url('../Assets/login-bg.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.login-box {
+    background: transparent;
+    width: 360px;
+    color: white;
+    padding: 30px 40px;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+}
+
+.login-box .heading {
+    text-align: center;
+    font-size: 30px;
+}
+
+.login-box .text-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 20px 0;
+}
+
+.text-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    padding: 20px 45px 20px 20px;
+    color: white;
+    font-size: 14px;
+}
+
+.text-box input::placeholder {
+    color: white;
+}
+
+.text-box i {
+    position: absolute;
+    right: 20px;
+    top: 25%;
+    transform: translate(-30%);
+    font-size: 20px;
+}
+
+.login-box .btn {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.login-box .btn button {
+    width: 100%;
+    height: 35px;
+    font-size: 15px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.login-box  .btn button:hover {
+    background-color: rgb(0, 255, 34);
+}
+
+
+.login-box .btn p {
+    width: 100%;
+    height: 35px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 10px;
+}
+
+.login-box .btn p a {
+    color: white;
+}
+
+.login-box .btn a {
+
+    text-decoration: underline;
+
+}
+
+.login-box .btn .FP-Cancel {
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 0 0;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.forgotpassword {
+
+    padding: 0 0 10px 10px;
+
+}
+
+.forgotpassword a {
+
+    font-size: 15px;
+    color: white;
+    text-decoration: underline;
+
+}
+
+.message {
+
+    margin: 10px;
+
+}
+
+.resend-email {
+
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 0 10px 10px;
+    font-size: 15px;
+    color: white;
+
+}
+
+.resend-email button {
+
+    background: none;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 15px;
+    text-decoration: underline;
+
+}
+
+
+
+@media (max-width: 700px) {
+
+    .login-box {
+        width: 300px;
+        padding: 30px 20px;
+    }
+
+    .text-box input {
+        font-size: 13px;
+    }
+
+    .text-box i {
+        font-size: 17px;
+    }
+
+}
+
+@media (max-width: 320px) {
+
+    .login-box {
+        width: 250px;
+    }
+
+    .text-box input {
+        font-size: 11px;
+    }
+
+    .text-box i {
+        font-size: 17px;
+    }
+
+}
+
+/* ------------------------------------------------- Sign Up Page -----------------------------------------------*/
+
+.SignUP {
+    width: 100%;
+    background: url('../Assets/login-bg.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 50px 0;
+}
+
+.Signup {
+    background: transparent;
+    width: 360px;
+    color: white;
+    padding: 30px 40px;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+}
+
+.Signup .heading {
+    text-align: center;
+    font-size: 30px;
+}
+
+.Signup .text-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 20px 0;
+}
+
+.Signup .select-box {
+
+    width: 100%;
+    display: flex;
+    position: relative;
+    margin: 10px 0;
+
+}
+
+.Signup .select-box select {
+
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    color: white;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    padding: 10px 20px 10px 25px;
+    font-size: 14px;
+    appearance: none;
+
+}
+
+.select-box i {
+
+    position: absolute;
+    right: 20px;
+    top: 33%;
+    transform: translate(-30%);
+    font-size: 20px;
+
+}
+
+.Signup .select-box select option {
+
+    color: black;
+
+}
+
+.Signup .btn {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.Signup .btn button {
+    width: 100%;
+    height: 35px;
+    font-size: 15px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.Signup .btn button:hover {
+    background-color: rgb(0, 255, 34);
+}
+
+.Signup .btn p {
+    width: 100%;
+    display: flex;
+    height: 35px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.Signup .btn p a {
+    color: white;
+}
+
+.Signup .btn a {
+
+    text-decoration: underline;
+
+}
+
+
+
+@media (max-width: 700px) {
+
+    .Signup {
+        width: 300px;
+        padding: 30px 20px;
+    }
+
+    .text-box input {
+        font-size: 13px;
+    }
+
+    .text-box i {
+        font-size: 17px;
+    }
+
+}
+
+@media (max-width: 320px) {
+
+    .Signup {
+        width: 250px;
+    }
+
+    .text-box input {
+        font-size: 11px;
+    }
+
+    .text-box i {
+        font-size: 17px;
+    }
+
+}

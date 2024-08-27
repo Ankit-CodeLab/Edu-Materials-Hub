@@ -1,0 +1,482 @@
+p , label , a{
+
+    cursor: default;
+    -webkit-user-select: none;
+    -ms-user-select: none; 
+    user-select: none;
+
+}
+
+img {
+
+    -webkit-user-select: none;
+    -ms-user-select: none; 
+    user-select: none;
+    pointer-events: none;
+
+}
+
+.Edit_profile {
+
+    width: 100%;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    backdrop-filter: blur(10px);
+    transition: 0.5s;
+    top: 30px;
+
+}
+
+.Edit_profile.show {
+    display: flex;
+}
+
+.Edit_profile h2 {
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 20px 0;
+
+}
+
+.Edit_profile form {
+
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(44 44 44);
+    padding: 40px;
+    color: white;
+    border-radius: 5px;
+    margin: 10px;
+
+}
+
+.Edit_profile form input , select {
+
+    height: 25px;
+    margin: 5px 0;
+    border-radius: 5px;
+    padding: 0 5px;
+
+}
+
+.Edit_profile form input[type="file"] {
+
+    padding: 0;
+
+}
+
+
+.Edit_profile label {
+
+    margin: 10px 0 0 0;
+
+}
+
+.Edit_profile button {
+
+    height: 25px;
+    margin: 10px 0 0 0;
+    border: none;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.Edit_profile button:hover {
+
+    background-color: rgb(35, 112, 255);
+    color: white;
+
+}
+
+.Edit_profile form span {
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Edit_profile form a {
+
+    font-size: 14px;
+    margin: 10px 0 0 0;
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+
+.User-Account {
+
+    width: 100%;
+    height: 100vh;
+    padding: 90px 30px 30px 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.User-Account .btns {
+
+    width: 100%;
+    margin: 20px 0 0 0;
+
+}
+
+.User-Account .btns button {
+
+    width: 100%;
+    border: none;
+    padding: 5px;
+    background: #e9e9e9;
+    margin: 0 0 20px 0;
+    font-size: 16px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+
+}
+
+.User-Account .btns button:hover {
+
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    color: white;
+    background-color: rgb(35, 112, 255);
+
+}
+
+.Profile {
+
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px;
+    font-size: 25px;
+    padding: 5px 10px;
+    background: #e9e9e9;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+
+}
+
+.Profile img {
+
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+.Profile p{
+
+    font-size: 20px;
+    color: black;
+
+}
+
+.user-info {
+
+    width: 100%;
+    margin: 20px 0;
+
+}
+
+.user-info p {
+
+    width: 100%;
+    cursor: default;
+    padding: 5px 10px;
+    color: black;
+    background: #e9e9e9;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+
+}
+
+.Account-btns {
+
+    width: 100%;
+    display: flex;
+    
+}
+
+.Account-btns button {
+    
+    width: 100%;
+    border: none;
+    padding: 5px;
+    background: #e9e9e9;
+    margin: 0 5px 0 0;
+    font-size: 16px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+
+}
+
+.Account-btns a {
+
+    width: 100%;
+    border: none;
+    padding: 5px;
+    margin: 0 0 0 5px;
+    font-size: 16px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    background: #e9e9e9;
+    color: black;
+
+}
+
+.Account-btns button:hover {
+
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    color: white;
+    background-color: rgb(35, 112, 255);
+    
+}
+
+.Account-btns a:hover {
+
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    color: white;
+    background-color: rgb(35, 112, 255);
+    
+}
+
+.AddResources {
+
+    width: 100%;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    backdrop-filter: blur(10px);
+    transition: 0.5s;
+    top: 30px;
+
+}
+
+.AddResources.show {
+    display: flex;
+}
+
+.AddResources h2 {
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 20px 0;
+
+}
+
+.AddResources form {
+
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(44 44 44);
+    padding: 40px;
+    color: white;
+    border-radius: 5px;
+    margin: 10px;
+
+}
+
+.AddResources form input , select {
+
+    height: 25px;
+    margin: 5px 0;
+    border-radius: 5px;
+    padding: 0 5px;
+
+}
+
+.AddResources form input[type="file"] {
+
+    padding: 0;
+
+}
+
+
+.AddResources label {
+
+    margin: 10px 0 0 0;
+
+}
+
+.AddResources button {
+
+    height: 25px;
+    margin: 10px 0 0 0;
+    border: none;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.AddResources button:hover {
+
+    background-color: rgb(35, 112, 255);
+    color: white;
+
+}
+
+.AddResources form span {
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.AddResources form a {
+
+    font-size: 14px;
+    margin: 10px 0 0 0;
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+
+
+.AddMaterial {
+
+    width: 100%;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    backdrop-filter: blur(10px);
+    transition: 0.5s;
+    top: 30px;
+
+}
+
+.AddMaterial.show {
+    display: flex;
+}
+
+.AddMaterial h2 {
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 20px 0;
+
+}
+
+.AddMaterial form {
+
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(44 44 44);
+    padding: 40px;
+    color: white;
+    border-radius: 5px;
+    margin: 10px;
+
+}
+
+.AddMaterial form input , select {
+
+    height: 25px;
+    margin: 5px 0;
+    border-radius: 5px;
+    padding: 0 5px;
+
+}
+
+.AddMaterial form input[type="file"] {
+
+    padding: 0;
+
+}
+
+
+.AddMaterial label {
+
+    margin: 10px 0 0 0;
+
+}
+
+.AddMaterial form textarea {
+
+    width: 100%;
+    height: 110px;
+    resize: none;
+    padding: 10px;
+    margin: 10px 0;
+
+}
+
+.AddMaterial button {
+
+    height: 25px;
+    margin: 10px 0 0 0;
+    border: none;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.AddMaterial button:hover {
+
+    background-color: rgb(35, 112, 255);
+    color: white;
+
+}
+
+.AddMaterial form span {
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.AddMaterial form a {
+
+    font-size: 14px;
+    margin: 10px 0 0 0;
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+
+.messages .message {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    background: rgb(35, 112, 255);
+    padding: 5px;
+    color: white;
+    margin: 0;
+    transition: 0.5s;
+}

@@ -1,0 +1,53 @@
+.AboutUs {
+
+    width: 100%;
+    padding: 70px 30px 30px 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.AboutUs h2 {
+
+    width: 80%;
+    padding: 15px 0;
+
+}
+
+.AboutUs p {
+
+    width: 80%;
+
+}
+
+.AboutUs div {
+
+    width: 80%;
+
+}
+
+.AboutUs div p {
+    
+    width: 100%;
+    padding: 10px 0;
+
+}
+
+@media (max-width: 450px) {
+
+    .AboutUs h2 {
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    .AboutUs p {
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    .AboutUs div {
+        width: 100%;
+    }
+
+}
