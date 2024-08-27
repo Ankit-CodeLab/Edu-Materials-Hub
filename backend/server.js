@@ -21,27 +21,29 @@ app.use(cors({
   credentials: true,
 }));
 
-const dbConfig = {
-  host: process.env.DB_HOST,
-  port: process.env.DB_PORT,
-  user: process.env.DB_USER,
-  password: process.env.DB_PASSWORD,
-  database: process.env.DB_NAME,
-};
+function createConnection() {
+  return mysql.createConnection({
+    host: process.env.DB_HOST,
+    port: process.env.DB_PORT,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_NAME,
+  });
+}
 
 let db;
 
-function connectWithRetry(retries) {
-  db = mysql.createConnection(dbConfig);
+function connectWithRetry(retries = 3) {
+  db = createConnection();
 
   db.connect((err) => {
     if (err) {
-      console.error('Database connection error:', err.stack);
+      console.error('Database connection error:', err);
       if (retries > 0) {
-        console.log(`Retrying database connection (${2 - retries + 1}/2)...`);
-        setTimeout(() => connectWithRetry(retries - 1), 2000); 
+        console.log(`Retrying... Attempts left: ${retries}`);
+        setTimeout(() => connectWithRetry(retries - 1), 5000);
       } else {
-        console.error('Failed to connect to the database after multiple attempts.');
+        console.error('Failed to connect to the database after multiple attempts');
         process.exit(1);
       }
     } else {
@@ -50,17 +52,16 @@ function connectWithRetry(retries) {
   });
 
   db.on('error', (err) => {
-    console.error('Database error:', err);
-    if (err.code === 'PROTOCOL_CONNECTION_LOST') {
-      console.log('Reconnecting to the database...');
-      connectWithRetry(2);
+    if (err.code === 'PROTOCOL_CONNECTION_LOST' || err.code === 'ECONNRESET') {
+      console.error('Database connection was closed. Reconnecting...');
+      connectWithRetry();
     } else {
-      throw err; 
+      throw err;
     }
   });
 }
 
-connectWithRetry(2);
+connectWithRetry();
 
 const transporter = nodemailer.createTransport({
   service: 'gmail',
