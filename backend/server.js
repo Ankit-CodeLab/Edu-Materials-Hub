@@ -13,7 +13,7 @@ const fs = require('fs');
 
 app.use(express.json());
 
-const FRONTEND_URL='http://localhost:3000';
+const FRONTEND_URL='https://edu-materials-hub.onrender.com';
 
 app.use(cors({
   origin: '*',
