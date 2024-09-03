@@ -85,7 +85,7 @@ app.post('/signup', async (req, res) => {
             return res.status(500).json({ message: 'Error creating user', error: err });
           }
 
-          const verificationLink = `http://localhost:5000/verify-email?token=${verificationToken}`;
+          const verificationLink = `${FRONTEND_URL}/verify-email?token=${verificationToken}`;
           const mailOptions = {
             from: process.env.EMAIL_USER,
             to: email,
